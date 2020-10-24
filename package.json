@@ -1,31 +1,21 @@
 {
-  "name": "library_nodejs-express-mongodb",
-  "version": "1.0.0",
-  "description": "An app which uses express and mongodb to manage a library",
-  "main": "app.js",
+  "name": "library-nodejs-express-mongodb",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint js"
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Godeta/Library_nodeJS-Express-MongoDB.git"
-  },
-  "keywords": [
-    "express",
-    "mongodb",
-    "library"
-  ],
-  "author": "Arnaud GODET",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Godeta/Library_nodeJS-Express-MongoDB/issues"
-  },
-  "homepage": "https://github.com/Godeta/Library_nodeJS-Express-MongoDB#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
   },
   "devDependencies": {
-    "eslint": "^7.12.0"
+    "nodemon": "^2.0.6"
   }
 }

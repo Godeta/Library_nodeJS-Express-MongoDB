@@ -3,5 +3,6 @@ A simple library website that allows the user to look at and manage a database w
 
 Setup : 
 git clone https://github.com/Godeta/Library_nodeJS-Express-MongoDB.git
-npm install express
-node app.js
+npm install
+DEBUG=library-nodejs-express-mongodb:* npm start
+
